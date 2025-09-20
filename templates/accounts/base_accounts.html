@@ -1,5 +1,4 @@
 {% load static %}
-{% load compress %}
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
   <head>
@@ -9,7 +8,6 @@
     <meta name="description" content />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/icon/favicon.png' %}" />
-    {% compress css %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/slicknav.css' %}" />
@@ -21,7 +19,6 @@
     <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'toastify/toastify.css' %}">
-    {% endcompress %}
   </head>
   {% include 'messages.html' %}
 
@@ -29,7 +26,6 @@
 
   {% endblock %}
   <body>
-    {% compress js %}
     <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
     <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
@@ -55,7 +51,6 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'toastify/toastify.js' %}"></script>
 
-    {% endcompress %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
       window.dataLayer = window.dataLayer || []

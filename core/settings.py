@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'blog',
 
     # added module
-    'compressor',
+    # 'compressor',
     'captcha',
     'django.contrib.sitemaps',
     'taggit',

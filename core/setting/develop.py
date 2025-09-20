@@ -16,17 +16,17 @@ ALLOWED_HOSTS = ['*']
 
 
 
-INSTALLED_APPS = [
-    'django.contrib.contenttypes',  # Must be present
-    'django.contrib.auth',          # Should come before contenttypes
-    # ... other apps ...
-    'taggit',                      # Required for taggit
-    'website',     
-    # added module for dev 
-    'django_extensions',
-    # location after staticfiles
-    'debug_toolbar',# Your app
-]
+# INSTALLED_APPS = [
+#     'django.contrib.contenttypes',  # Must be present
+#     'django.contrib.auth',          # Should come before contenttypes
+#     # ... other apps ...
+#     'taggit',                      # Required for taggit
+#     'website',     
+#     # added module for dev 
+#     'django_extensions',
+#     # location after staticfiles
+#     'debug_toolbar',# Your app
+# ]
 
 
 
@@ -47,22 +47,22 @@ MEDIA_URL = '/media/'
 
 
 # compressor
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-]
-COMPRESS_ENABLED = True
-COMPRESS_OFFLINE = True
-# Set the backend to use for compression
-COMPRESS_CSS_FILTERS = [
-    'compressor.filters.css_default.CssAbsoluteFilter',
-    'compressor.filters.cssmin.CSSMinFilter',
-]
-COMPRESS_JS_FILTERS = [
-    'compressor.filters.jsmin.JSMinFilter',
-]
-# Cache settings for compressor
-COMPRESS_CACHE_BACKEND = 'default'
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'compressor.finders.CompressorFinder',
+# ]
+# COMPRESS_ENABLED = True
+# COMPRESS_OFFLINE = True
+# # Set the backend to use for compression
+# COMPRESS_CSS_FILTERS = [
+#     'compressor.filters.css_default.CssAbsoluteFilter',
+#     'compressor.filters.cssmin.CSSMinFilter',
+# ]
+# COMPRESS_JS_FILTERS = [
+#     'compressor.filters.jsmin.JSMinFilter',
+# ]
+# # Cache settings for compressor
+# COMPRESS_CACHE_BACKEND = 'default'
 
 
 # debug_toolbar setting for dev when trun on it activate and trun off deactivate
